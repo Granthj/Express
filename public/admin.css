@@ -1,0 +1,22 @@
+*{
+    margin:0px;
+    padding:0px;
+    /* background-color: black; */
+}
+#Head{
+  background-color: green;
+  width: 1000px;
+  padding: 30px;
+  padding-left: 30%;
+  /* margin-top: 0px ; */
+}
+#list{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+#shop{
+    color:orangered;
+}
+#product{
+    color:orangered;
+}

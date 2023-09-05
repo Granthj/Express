@@ -1,0 +1,36 @@
+*{
+   margin:0px;
+   padding:0px; 
+}
+#main{
+    background-color:darkgray;
+    height:1000px;
+    /* opacity:0.8; */
+}
+#Head{
+    padding:30px;
+    background-image:url(shop.jpg);
+    background-size: 100% 100%;
+    background-position: 300px;
+    background-size: 500px;
+    padding-left: 170px;
+    position:relative;
+}
+#admin{
+    position:absolute;
+    left:840px;
+    font-size: 15px;
+    font-family:cursive;
+}
+#list{
+    padding-left: 20px;
+    font-family: cursive;
+    color:chocolate;
+    background-color: darkseagreen;
+    position:relative;
+}
+.link{
+    color:darkorange;
+    position:absolute;
+    top:15px;
+}

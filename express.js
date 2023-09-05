@@ -1,0 +1,22 @@
+const express = require('express');
+const path = require('path');
+const app = express();
+const admin = require('./admin.js');
+const errorrouter = require('./error.js');
+const shoprouter = require('./shop.js');
+const bodyparser = require('body-parser'); 
+app.use(bodyparser.urlencoded({extended:false})); 
+app.use(express.static(path.join(__dirname,'public')));
+const express_hbs = require('express-handlebars');
+app.engine('hbs',express_hbs());
+app.set('view engine','hbs');
+app.set('views','view');
+app.use(admin.routes);
+app.use(shoprouter);    
+console.log('repeat');
+app.get('/',(req,res,next)=>{
+    res.sendFile(path.join(__dirname,'view','admin.html'));
+    // res.render('template',{title: 'Admin Page',});
+});
+app.use(errorrouter);
+app.listen(9000);

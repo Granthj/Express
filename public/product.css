@@ -1,0 +1,42 @@
+*{
+    margin:0px;
+    padding:0px
+}
+#Head{
+  padding: 50px;
+  background-color: black;
+  position:relative;
+}
+button{
+    /* display:inline-block; */
+    text-decoration: none;
+    color:rgb(168, 151, 66);
+    font-weight: bold;
+    background-color: black;
+    padding: 0px;
+    font-size: 10px;
+}
+.box{
+    position:absolute;
+    right:40px;
+}
+#sizebox{
+    margin-left: 10px;
+    width:110px;
+    padding-left:2px;
+    font-weight: bold;
+    font-style:normal;
+}
+#background{
+    background-image: url(product.jpg);
+    height:1000px;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    position: relative;
+}
+#href{
+    position:absolute;  
+    left: 20px;
+    margin:20px;
+    color: brown;
+}
